@@ -11,7 +11,7 @@
         </plugin>
         <plugin
             filename="ignition-gazebo-user-commands-system"
-            name="ignition::gazebo::systems::UserCommands">
+            name="ignition::gazebo::systems::UserCommands"> 
         </plugin>
         <plugin
             filename="ignition-gazebo-scene-broadcaster-system"
