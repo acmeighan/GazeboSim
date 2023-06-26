@@ -69,6 +69,8 @@ def main(args=None):
 
     # Training mode is training!
     if node.training_mode_ == "training":
+        # Insert model name here:
+        model_name = "PPO_limo"
         
         # Train model
         model = PPO("MultiInputPolicy",env,
@@ -81,12 +83,12 @@ def main(args=None):
         # Execute training
         try:
             model.learn(total_timesteps=int(20000000), reset_num_timesteps=False, 
-                        callback=eval_callback, tb_log_name="PPO_model_name")
+                        callback=eval_callback, tb_log_name=model_name)
         except KeyboardInterrupt:
-            model.save(f"{trained_models_dir}/PPO_model_name")
+            model.save(f"{trained_models_dir}/{model_name}")
 
         # Save the trained model
-        model.save(f"{trained_models_dir}/PPO_model_name")
+        model.save(f"{trained_models_dir}/{model_name}")
 
     # Training mode is parameter tuning
     elif node.training_mode_ == "hyperparam_tuning":
