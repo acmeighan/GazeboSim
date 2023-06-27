@@ -1,0 +1,106 @@
+[3.191s] DEBUG:colcon:Command line arguments: ['/usr/bin/colcon', 'list', '-p', '--base-paths', '/home/ameighan/GazeboSim']
+[3.192s] DEBUG:colcon:Parsed command line arguments: Namespace(log_base=None, log_level=None, verb_name='list', build_base='build', ignore_user_meta=False, metas=['./colcon.meta'], base_paths=['/home/ameighan/GazeboSim'], packages_ignore=None, packages_ignore_regex=None, paths=None, packages_up_to=None, packages_up_to_regex=None, packages_above=None, packages_above_and_dependencies=None, packages_above_depth=None, packages_select_by_dep=None, packages_skip_by_dep=None, packages_skip_up_to=None, packages_select_build_failed=False, packages_skip_build_finished=False, packages_select_test_failures=False, packages_skip_test_passed=False, packages_select=None, packages_skip=None, packages_select_regex=None, packages_skip_regex=None, packages_start=None, packages_end=None, allow_overriding=[], topological_order=False, names_only=False, paths_only=True, topological_graph=False, topological_graph_dot=False, topological_graph_density=False, topological_graph_legend=False, topological_graph_dot_cluster=False, topological_graph_dot_include_skipped=False, verb_parser=<colcon_defaults.argument_parser.defaults.DefaultArgumentsDecorator object at 0x7f503ec08580>, verb_extension=<colcon_package_information.verb.list.ListVerb object at 0x7f503ed86320>, main=<bound method ListVerb.main of <colcon_package_information.verb.list.ListVerb object at 0x7f503ed86320>>)
+[3.360s] Level 1:colcon.colcon_core.package_discovery:discover_packages(colcon_meta) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(ignore) check parameters
+[3.362s] Level 1:colcon.colcon_core.package_discovery:discover_packages(path) check parameters
+[3.363s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) discover
+[3.363s] INFO:colcon.colcon_core.package_discovery:Crawling recursively for packages in '/home/ameighan/GazeboSim'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['ignore', 'ignore_ament_install']
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'ignore'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'ignore_ament_install'
+[3.363s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['colcon_pkg']
+[3.364s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'colcon_pkg'
+[3.364s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['colcon_meta']
+[3.366s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'colcon_meta'
+[3.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['ros']
+[3.371s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'ros'
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['cmake', 'python']
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'cmake'
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'python'
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extensions ['python_setup_py']
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim) by extension 'python_setup_py'
+[3.437s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/log) by extensions ['ignore', 'ignore_ament_install']
+[3.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/log) by extension 'ignore'
+[3.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/log) ignored
+[3.438s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['ignore', 'ignore_ament_install']
+[3.452s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'ignore'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'ignore_ament_install'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['colcon_pkg']
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'colcon_pkg'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['colcon_meta']
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'colcon_meta'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['ros']
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'ros'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['cmake', 'python']
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'cmake'
+[3.453s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'python'
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extensions ['python_setup_py']
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src) by extension 'python_setup_py'
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['ignore', 'ignore_ament_install']
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'ignore'
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'ignore_ament_install'
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['colcon_pkg']
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'colcon_pkg'
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['colcon_meta']
+[3.454s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'colcon_meta'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['ros']
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'ros'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['cmake', 'python']
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'cmake'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'python'
+[3.455s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extensions ['python_setup_py']
+[3.466s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning) by extension 'python_setup_py'
+[3.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['ignore', 'ignore_ament_install']
+[3.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'ignore'
+[3.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'ignore_ament_install'
+[3.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['colcon_pkg']
+[3.467s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'colcon_pkg'
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['colcon_meta']
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'colcon_meta'
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['ros']
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'ros'
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['cmake', 'python']
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'cmake'
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'python'
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extensions ['python_setup_py']
+[3.468s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner) by extension 'python_setup_py'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['ignore', 'ignore_ament_install']
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'ignore'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'ignore_ament_install'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['colcon_pkg']
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'colcon_pkg'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['colcon_meta']
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'colcon_meta'
+[3.469s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['ros']
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'ros'
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['cmake', 'python']
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'cmake'
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'python'
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extensions ['python_setup_py']
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/backup) by extension 'python_setup_py'
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['ignore', 'ignore_ament_install']
+[3.470s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'ignore'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'ignore_ament_install'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['colcon_pkg']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'colcon_pkg'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['colcon_meta']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'colcon_meta'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['ros']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'ros'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['cmake', 'python']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'cmake'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'python'
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extensions ['python_setup_py']
+[3.471s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/config) by extension 'python_setup_py'
+[3.472s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extensions ['ignore', 'ignore_ament_install']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extension 'ignore'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extension 'ignore_ament_install'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extensions ['colcon_pkg']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extension 'colcon_pkg'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extensions ['colcon_meta']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extension 'colcon_meta'
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extensions ['ros']
+[3.489s] Level 1:colcon.colcon_core.package_identification:_identify(/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner) by extension 'ros'
+[3.526s] DEBUG:colcon.colcon_core.package_identification:Package '/home/ameighan/GazeboSim/src/Limobot-Path-Planning/limo_robot_spawner/limo_robot_spawner' with type 'ros.ament_python' and name 'limo_robot_spawner'
+[3.529s] Level 1:colcon.colcon_core.package_discovery:discover_packages(recursive) using defaults
