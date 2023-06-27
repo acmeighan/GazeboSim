@@ -82,7 +82,9 @@ class LimoController(Node):
         #  - here np.clip takes the value and makes sure that it stays within a certain range
         #  - in this case the min/max x and y values for the simulated environment
         #  - I assume the clip will not be neccessary for real world
-        self.agent_location_ = np.array([np.float32(np.clip(msg.pose.pose.position.x,-12,12)), np.float32(np.clip(msg.pose.pose.position.y,-35,21))])
+
+        # Need to add z dimension to agent_location_
+        self.agent_location_ = np.array([np.float32(msg.pose.pose.position.x), np.float32(msg.pose.pose.position.y), np.float32(msg.pose.pose.position.z)])
         self.agent_orientation_ = 2 * math.atan2(msg.pose.pose.orientation.z, msg.pose.pose.orientation.w)
         # Letting the env know that pose has been updated
         self.done_pose_ = True

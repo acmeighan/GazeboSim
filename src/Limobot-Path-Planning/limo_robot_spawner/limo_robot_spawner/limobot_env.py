@@ -4,10 +4,10 @@ from gym.spaces import Dict, Box
 import numpy as np
 import random
 # need to replace with 'LimoController'
-from hospital_robot_spawner.robot_controller import RobotController
+from limo_robot_spawner.limo_controller import LimoController
 import math
 
-class LimoBotEnv(RobotController, Env):
+class LimoBotEnv(LimoController, Env):
     """
     
     Insert comments here on RL environment:
@@ -24,8 +24,8 @@ class LimoBotEnv(RobotController, Env):
         self.robot_name = "LimoBot"
         # Initializes starting location of the agent for each episode (x,y,theta)
         #  - only used if starting location is not randomized
-        #  - need to input (x,y,theta) based on new simulation environment
-        self.initial_agent_location_ = np.array([x,y,theta], dtype=np.float32) 
+        #  - need to input (x,y,z,theta) based on new simulation environment
+        self.initial_agent_location_ = np.array([2.75,-14.0,0,theta], dtype=np.float32) 
         # Initializes 4 inner corners of the simple square road
         #  - this needs to be changed if we create more complex maps
         #  - which we should (all right turns except for one left)
@@ -125,7 +125,7 @@ class LimoBotEnv(RobotController, Env):
         #  - [x, y, angle, x_lowerbound, x_upperbound, y_lowerbound, y_upperbound, angle_lowerbound, angle_upperbound]
         #  - x, y and angle defines the center of location and orientation
         #  - the bounds define the limits from the center in which the robot will spawn
-        self.robot_locations = [
+        self.robot_locations = [ #aws-robotics suggested x,y,z = (2.75,-14,0)
             [x1,y1,theta1,x_lb1,x_ub1,y_lb1,y_ub1,theta_lb1,theta_ub1],
             [x2,y2,theta2,x_lb2,x_ub2,y_lb2,y_ub2,theta_lb2,theta_ub2]
         ]
@@ -304,7 +304,9 @@ class LimoBotEnv(RobotController, Env):
 
         # Reward type is other
         if self.reward_method_ == 1:
-            # Insert different reward functions below
+            # If current elevation is zero then we should be inside the track
+            #  - in this case we can give positive reward
+            if info[""]
             reward = 0
             
         return reward

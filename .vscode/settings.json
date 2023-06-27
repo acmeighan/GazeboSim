@@ -1,3 +1,7 @@
 {
-    "ros.distro": "humble"
+    "ros.distro": "humble",
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+    "python.formatting.provider": "none"
 }
