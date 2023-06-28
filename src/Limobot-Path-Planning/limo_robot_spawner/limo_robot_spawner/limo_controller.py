@@ -138,6 +138,7 @@ class LimoController(Node):
     def callback_set_target_state(self,future):
         try:
             response = future.result()
+            self.done_set_robot_state_ = True
         except Exception as e:
             self.get_logger().error("Service call failed: %r" % (e,))
 

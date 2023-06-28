@@ -47,9 +47,10 @@ class LimoBotEnv(LimoController, Env):
         # Decides whether or not the action space is normalized between [-1,1]
         self.normalize_act_ = True
         # Decides the method used to compute the reward for each step
-        #  0: simple reward
-        #  1: other reward ect ect.
-        self.reward_method_ = 0
+        #  0: four corners method
+        #  1: elevation based method (assumes road is all elevation 0)
+        #  2: other methods...
+        self.reward_method_ = 1
         # Initializes the maximum linear velocity used in actions
         self.max_linear_velocity_ = 1
         # Initializes the minimum linear velocity used in actions
@@ -193,8 +194,9 @@ class LimoBotEnv(LimoController, Env):
         pose2d = self.randomize_robot_location()
 
         # Reset done variable
+        self.on_road_ = True
         #  - need to move the *_ in RobotController class
-        self.done_set_rob_state_ = False 
+        self.done_set_rob_state_ = False
 
         # Call the set robot position service
         self.call_set_robot_state_service(pose2d)
@@ -302,12 +304,25 @@ class LimoBotEnv(LimoController, Env):
                 reward = -10
                 self.get_logger().info("AGENT HAS LEFT THE ROAD")
 
-        # Reward type is other
+        # Reward type is elevation based
         if self.reward_method_ == 1:
             # If current elevation is zero then we should be inside the track
             #  - in this case we can give positive reward
-            if info[""]
-            reward = 0
+            if info["location"][2] >= 1.39:
+                # if action is only linear movement
+                if (action[0] > 0) and (action[1] == 0):
+                    reward = 3 + action[0]
+                # else, action has angular movement
+                else:
+                    reward = 1 + math.sqrt(action[0]**2 + action[1]**2)
+            
+            # If car has moved on top of the side of the road - penalize and end episode
+            elif info["location"][2] < 1.39:
+                reward = -10
+                self.get_logger().info("AGENT HAS LEFT ROAD, STARTING NEW EPISODE")
+                self.on_road_ = False
+            else:
+                reward = 0
             
         return reward
     
